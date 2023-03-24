@@ -2,10 +2,7 @@ import React from 'react'
 
 function Image() {
     return (
-        <>
-            <div>Image should be below this</div>
-            <img src="pic.png" alt="Click to add photo"/>
-        </>
+        <img src="mac.png" alt="image not foujnd" />
     )
 }
 
