@@ -11,7 +11,7 @@ function Header() {
         <Image/>
         <Name />
         <Grid labels={["Class", "Level", "Race", "Alignment", "Background", "XP"]} />
-        
+        <Grid labels={["Age", "Height", "Weight", "Eyes", "Skin", "Hair"]} />
     </div>
   )
 }
