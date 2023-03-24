@@ -6,21 +6,43 @@
 
 body {
   color: rgb(255, 255, 255);
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(0, 0, 0)
-    )
-    rgb(0, 0, 255);
+      rgb(0, 0, 0)) rgb(0, 0, 255);
 }
 
 main {
   height: 100vh;
-  padding-top: 3rem;
+  padding: 4rem 3rem;
 }
 
 .heading {
   display: flex;
   flex-direction: row;
   text-align: center;
+}
+
+.heading img {
+  margin: 0 2rem;
+  width: 64px;
+  height: 64px;
+}
+
+.heading .name {
+  margin: 0 2rem;
+}
+
+.line input {
+  margin-bottom: 0.4rem;
+}
+
+#grid {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.gridRow .line {
+  margin: 0 0.4rem;
+  margin-bottom: 0.5rem;
 }
