@@ -28,6 +28,7 @@ main {
   margin: 0 2.5rem;
   width: 150px;
   height: 150px;
+  border-radius: 10px;
 }
 
 .heading .name {
@@ -48,4 +49,28 @@ main {
 .gridRow .line {
   margin: 0 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.checkBox {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  color: black;
+}
+
+.checkBox:hover {
+  cursor: pointer;
+}
+
+.check {
+  text-align: center;
+}
+
+.body {
+  margin: 3rem 0;
+}
+
+.inside {
+  height: 100%;
+  width: 100%;
 }

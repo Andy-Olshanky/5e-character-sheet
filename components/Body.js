@@ -5,9 +5,9 @@ import Check from './Check'
 
 function Body() {
   return (
-    <>
+    <div className='body'>
         <Check />
-    </>
+    </div>
   )
 }
 

@@ -4,7 +4,12 @@ import CheckBox from './CheckBox'
 function Check() {
   return (
     <div className="check">
-        <CheckBox />
+        <CheckBox images={[
+            "expert.png",
+            "notProficient.png", 
+            "halfProficient.png",
+            "proficient.png"
+        ]}/>
     </div>
   )
 }
