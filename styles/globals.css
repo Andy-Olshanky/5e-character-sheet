@@ -51,14 +51,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.checkBox {
-  width: 64px;
-  height: 64px;
-  background-color: white;
-  color: black;
-}
-
-.checkBox:hover {
+.inside:hover {
   cursor: pointer;
 }
 

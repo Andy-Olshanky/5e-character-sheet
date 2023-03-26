@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Image() {
+function Image({image}) {
     return (
-        <img src="whiskers.png" alt="image not foujnd" />
+        <img src={image} alt="Image not Found" />
     )
 }
 

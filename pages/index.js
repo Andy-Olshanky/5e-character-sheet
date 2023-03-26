@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import {Inter} from 'next/font/google'
 import HomePage from '@/components/HomePage'
 
@@ -63,7 +62,8 @@ export default function Home() {
                       <div className="inventory"></div>
                     </div>
                 </div>
-                <div className="background"></div> */} </main>
+                <div className="background"></div> */} 
+            </main>
         </>
     )
 }
