@@ -8,7 +8,7 @@ import Row from './Row'
 function Header() {
   return (
     <div className="heading">
-        <Image/>
+        <Image image={"whiskers.png"}/>
         <Name />
         <Grid labels={["Class", "Level", "Race", "Alignment", "Background", "XP"]} />
         <Grid labels={["Age", "Height", "Weight", "Eyes", "Skin", "Hair"]} />
