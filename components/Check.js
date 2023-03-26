@@ -1,9 +1,8 @@
 import React from 'react'
 import { createElement } from 'react'
 import CycleImage from './CycleImage'
-import Lines from './Lines'
 
-function Check() {
+function Check({ability}) {
 
   var thing = new CycleImage({images: [
             "notProficient.png", 
@@ -12,9 +11,9 @@ function Check() {
             "expert.png"
         ]}).render()
 
-  var lineJawn = <Lines description={""} />
+  var lineJawn = <div>{ability}</div>
 
-  var modifier = <div>mod</div>
+  var modifier = <div>modifier</div>
 
   var children = [thing, lineJawn, modifier]
 
