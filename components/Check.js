@@ -18,6 +18,7 @@ function Check() {
 
   var children = [thing, lineJawn, modifier]
 
+  // proficiency checkbox, skill name, modifier
   return createElement("div", {className: "check"}, children)
 }
 
