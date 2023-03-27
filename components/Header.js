@@ -10,8 +10,8 @@ function Header() {
     <div className="heading">
         <Image image={"whiskers.png"}/>
         <Name />
-        <Grid labels={["Class", "Level", "Race", "Alignment", "Background", "XP"]} />
-        <Grid labels={["Age", "Height", "Weight", "Eyes", "Skin", "Hair"]} />
+        <Grid labels={["Class", "Level", "Race", "Alignment", "Background", "XP"]} rows={2} cols={3} />
+        <Grid labels={["Age", "Height", "Weight", "Eyes", "Skin", "Hair"]} rows={2} cols={3} />
     </div>
   )
 }

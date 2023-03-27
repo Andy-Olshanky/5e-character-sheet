@@ -41,9 +41,13 @@ main {
 
 #grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   margin: 0 2.5rem;
+}
+
+.gridRow {
+  display: flex;
 }
 
 .gridRow .line {
@@ -56,14 +60,10 @@ main {
 }
 
 .check {
-  text-align: center;
+  text-align: left;
+  display: inline-flex;
 }
 
 .body {
   margin: 3rem 0;
-}
-
-.inside {
-  height: 100%;
-  width: 100%;
 }
