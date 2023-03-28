@@ -9,6 +9,15 @@ class Abilities {
         this.wisdom = new Ability(props.wisdomProps)
         this.charisma = new Ability(props.charismaProps)
         this.allAbilities = [this.strength, this.dexterity, this.constitution, this.intelligence, this.wisdom, this.charisma]
+
+        this.level = props.level != null ? props.level : 0
+        this.initiative = getInitiative()
+        this.initiativeBonus = props.initiativeBonus != null ? props.initiativeBonus : 0
+        this.proficiency = this.getProficiency()
+        this.proficiencyMods = new Proficiencies({proficiency: this.proficiency})
+
+        this.skills = this.makeSkills()
+        this.saves = this.makeSaves()
     }
 
     getAbility = (name) => {
@@ -18,6 +27,25 @@ class Abilities {
             }
         }
         return null
+    }
+
+    getProficiency = () => {
+        var prof = level - 1
+        prof /= 4
+        prof = Math.floor(prof)
+        return prof
+    }
+
+    getInitiative = () => {
+        return this.dexterity.getModifier() + this.initiativeBonus
+    }
+
+    makeSaves = () => {
+        return {}
+    }
+
+    makeSkills = () => {
+        return {}
     }
 }
 
@@ -40,6 +68,12 @@ class Ability {
         temp /= 10
         return Math.floor(temp)
     }
+
+    increaseScore = (change) => {
+        this.score += change
+        this.checkScore
+        this.modifier = this.getModifier
+    }
 }
 
 class Skill {
@@ -54,10 +88,10 @@ class Skill {
         this.parentAbility = props.parentAbility
         this.otherModifier = props.otherModifier != null ? props.otherModifier : 0
         this.modifier = this.parentAbility.modifier + this.otherModifier
-        this.modifier += this.getProficiency()
+        this.modifier += this.setProficiency()
     }
 
-    getProficiency = () => {
+    setProficiency = () => {
         switch (this.proficiencyMod) {
             case(this.HALFPROFICIENT):
                 return Math.floor(this.proficiency / 2)
@@ -75,7 +109,18 @@ class Skill {
 class Save extends Skill{
     constructor(props) {
         super(props)
-        this.modifier = 8 + this.parentAbility.modifier + this.getProficiency()
+        this.modifier = 8 + this.parentAbility.modifier + this.setProficiency()
+    }
+}
+
+class Proficiencies {
+    constructor(props) {
+        this.proficiency = props.proficiency
+        this.allProficiencies = this.getProficiencyMods()
+    }
+
+    getProficiencyMods = () => {
+        return {}
     }
 }
 
@@ -141,22 +186,42 @@ var charProps = {
     hp: int,
     abilities: {
         strengthProps: {
-
+            name: string,
+            otherModifier: int,
+            score: int
         },
         dexterityProps: {
-
+            name: string,
+            otherModifier: int,
+            score: int
         },
         constitutionProps: {
-
+            name: string,
+            otherModifier: int,
+            score: int
         },
         intelligenceProps: {
-
+            name: string,
+            otherModifier: int,
+            score: int
         },
         wisdomProps: {
-
+            name: string,
+            otherModifier: int,
+            score: int
         },
         charismaProps: {
+            name: string,
+            otherModifier: int,
+            score: int
+        },
+    level: int,
+    initiativeBonus: int
+    }
+}
 
-        }
-    },
+var SkillSaveProps = {
+    name: string,
+    parentAbility: ability,
+    otherModifier: int
 }
