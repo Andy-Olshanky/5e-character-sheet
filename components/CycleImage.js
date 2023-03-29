@@ -5,12 +5,13 @@ class CycleImage extends React.Component {
         super(props)
         this.images = props.images
         this.ptr = 0;
+        this.id = props.id
     }
 
     handleClick = () => {
         if (this.images != null && this.images.length > 0) {
             this.ptr = (this.ptr + 1) % this.images.length
-            var div = document.getElementById("photo")
+            var div = document.getElementById(this.id)
             div.setAttribute("src", this.images[this.ptr])
         }
     }
@@ -18,7 +19,7 @@ class CycleImage extends React.Component {
     render() {
         return (
             <div className="inside" onClick={this.handleClick}>
-                <img id="photo" src={this.images[this.ptr]} alt="No Image Found" />
+                <img className="photo" id={this.id} src={this.images[this.ptr]} alt="No Image Found" />
             </div>
         )
     }
