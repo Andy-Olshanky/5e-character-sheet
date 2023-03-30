@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Lines({description}) {
+function Lines({description, id}) {
     return (
         <>
-            <div className="line">
+            <div className="line" id={id}>
                 <input type="text"/>
                 <div>{description}</div>
             </div>

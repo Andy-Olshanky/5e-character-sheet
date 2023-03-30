@@ -84,6 +84,7 @@ main {
 
 .body {
   margin: 3rem 0;
+  display: flex;
 }
 
 .saves {

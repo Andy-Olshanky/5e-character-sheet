@@ -5,12 +5,12 @@ function Saves() {
   return (
     <div className="saves">
       <div id="group">
-        <Check ability="Strength" id="strengthSave" />
-        <Check ability="Dexterity" id="dexteritySave" />
-        <Check ability="Constitution" id="constitutionSave" />
-        <Check ability="Intelligence" id="intelligenceSave" />
-        <Check ability="Wisdom" id="wisdomSave" />
-        <Check ability="Charisma" id="charismaSave" />
+        <Check ability="Strength" profId="strengthSaveProf" nameId="strengthSaveMod" />
+        <Check ability="Dexterity" profId="dexteritySaveProf" nameId="dexteritySaveMod" />
+        <Check ability="Constitution" profId="constitutionSaveProf" nameId="constitutionSaveMod" />
+        <Check ability="Intelligence" profId="intelligenceSaveProf" nameId="intelligenceSaveMod" />
+        <Check ability="Wisdom" profId="wisdomSaveProf" nameId="wisdomSaveMod" />
+        <Check ability="Charisma" profId="charismaSaveProf" nameId="charismaSaveMod" />
         <strong>Saving Throws</strong>
       </div>
     </div>

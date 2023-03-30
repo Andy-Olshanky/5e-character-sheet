@@ -5,24 +5,24 @@ function Skills() {
   return (
     <div className="skills">
       <div id="group">
-        <Check ability="Acrobatics (DEX)" id="acrobaticsCheck" />
-        <Check ability="Animal Handling (WIS)" id="animalHandlingCheck" />
-        <Check ability="Arcana (INT)" id="arcanaCheck" />
-        <Check ability="Athletics (STR)" id="athleticsCheck" />
-        <Check ability="Deception (CHA)" id="deceptionCheck" />
-        <Check ability="History (INT)" id="historyCheck" />
-        <Check ability="Insight (WIS)" id="insightCheck" />
-        <Check ability="Intimidation (CHA)" id="intimidationCheck" />
-        <Check ability="Investigation (INT)" id="investigationCheck" />
-        <Check ability="Medicine (WIS)" id="medicineCheck" />
-        <Check ability="Nature (INT)" id="natureCheck" />
-        <Check ability="Perception (WIS)" id="perceptionCheck" />
-        <Check ability="Performance (CHA)" id="performanceCheck" />
-        <Check ability="Persuassion (CHA)" id="persuassionCheck" />
-        <Check ability="Religion (INT)" id="religionCheck" />
-        <Check ability="Sleight of Hand (DEX)" id="sleightOfHandCheck" />
-        <Check ability="Stealth (DEX)" id="stealthCheck" />
-        <Check ability="Survival (WIS)" id="survivalCheck" />
+        <Check ability="Acrobatics (DEX)" profId="acrobaticsCheckProf" nameId="acrobaticsCheckMod" />
+        <Check ability="Animal Handling (WIS)" profId="animalHandlingCheckProf" nameId="animalHandlingCheckMod" />
+        <Check ability="Arcana (INT)" profId="arcanaCheckProf" nameId="arcanaCheckMod" />
+        <Check ability="Athletics (STR)" profId="athleticsCheckProf" nameId="athleticsCheckMod" />
+        <Check ability="Deception (CHA)" profId="deceptionCheckProf" nameId="deceptionCheckMod" />
+        <Check ability="History (INT)" profId="historyCheckProf" nameId="historyCheckMod" />
+        <Check ability="Insight (WIS)" profId="insightCheckProf" nameId="insightCheckMod" />
+        <Check ability="IntimprofIdation (CHA)" profId="intimidationCheckProf" nameId="intimidationCheckMod" />
+        <Check ability="Investigation (INT)" profId="investigationCheckProf" nameId="investigationCheckMod" />
+        <Check ability="Medicine (WIS)" profId="medicineCheckProf" nameId="medicineCheckMod" />
+        <Check ability="Nature (INT)" profId="natureCheckProf" nameId="natureCheckMod" />
+        <Check ability="Perception (WIS)" profId="perceptionCheckProf" nameId="perceptionCheckMod" />
+        <Check ability="Performance (CHA)" profId="performanceCheckProf" nameId="performanceCheckMod" />
+        <Check ability="Persuassion (CHA)" profId="persuassionCheckProf" nameId="persuassionCheckMod" />
+        <Check ability="Religion (INT)" profId="religionCheckProf" nameId="religionCheckMod" />
+        <Check ability="Sleight of Hand (DEX)" profId="sleightOfHandCheckProf" nameId="sleightOfHandCheckMod" />
+        <Check ability="Stealth (DEX)" profId="stealthCheckProf" nameId="stealthCheckMod" />
+        <Check ability="Survival (WIS)" profId="survivalCheckProf" nameId="survivalCheckMod" />
         <strong>Skill Checks</strong>
       </div>
     </div>

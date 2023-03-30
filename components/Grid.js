@@ -14,7 +14,7 @@ function Grid({
     for (var i = 0; i < rows; i++) {
         children.push([])
         for (var j = 0; j < cols; j++) {
-            children[i].push(<Lines description={labels[ptr]} />)
+            children[i].push(<Lines description={labels[ptr]} id={labels[ptr].toLowerCase()} />)
             ptr++
         }
     }
