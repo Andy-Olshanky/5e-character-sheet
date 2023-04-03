@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {Inter} from 'next/font/google'
-import HomePage from '@/components/HomePage'
+import HomePage from '@/oldComponents/components/HomePage'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -14,55 +14,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main>
-                <HomePage />
-                {/* <div>Image should be below this</div>
-                <img src="@/public/favicon.ico" alt="Click to add photo"/>
-                <div>Is it there</div> */}
-                {/* <div className="header">
-                    <div className="info"></div>
-                    <div className="inspiration"></div>
-                </div>
-                <div className="body">
-                    <div className="leftCol">
-                        <div className="abilities" id="saves"></div>
-                        <div className="senses"></div>
-                        <div className="proficiencies"></div>
-                    </div>
-                    <div className="centerCol">
-                        <div className="upper">
-                            <div className="scores"></div>
-                            <div className="number" id="proficiency"></div>
-                        </div>
-                        <div className="lower">
-                            <div className="left">
-                                <div className="abilities" id="skills"></div>
-                            </div>
-                            <div className="right">
-                                <div className="row">
-                                    <div className="number" id="ac"></div>
-                                    <div className="number" id="initiative"></div>
-                                    <div className="number" id="speed"></div>
-                                </div>
-                                <div className="row">
-                                  <div className="hp">
-                                    <div id="main"></div>
-                                    <div id="temp"></div>
-                                  </div>
-                                </div>
-                                <div className="row">
-                                  <div className="weapons"></div>
-                                </div>
-                                <div className="row">
-                                  <div className="spells"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="rightCol">
-                      <div className="inventory"></div>
-                    </div>
-                </div>
-                <div className="background"></div> */} 
+                {/* <HomePage /> */}
             </main>
         </>
     )
